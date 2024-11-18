@@ -12,7 +12,7 @@ void CreateArrayWithRandomElements(int* a, int numberOfElements, int start, int 
 }
 
 void PrintArray(int* a, int size, int i) {
-    cout << "a[" << i << "] = " << a[i] << "; ";
+    cout << "a[" << setw(2) << i << " ] = " << setw(4) << a[i] << endl;
     if (i < size - 1) {
         PrintArray(a, size, i + 1);
     }
